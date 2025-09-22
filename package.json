@@ -1,0 +1,14 @@
+{
+  "name": "staff-api",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix web\"",
+    "install:all": "concurrently \"npm install --prefix server\" \"npm install --prefix web\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0"
+  }
+}
