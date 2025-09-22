@@ -61,4 +61,5 @@ The API is covered with Vitest + Supertest tests.
 Run tests with:
 
 cd server
+
 npm run test
