@@ -15,6 +15,7 @@ Installation
 Clone the repo and install dependencies:
 
 git clone https://github.com/SofiePellegrini/employee-api.git
+
 cd employee-api
 
 # install root dependencies (includes concurrently)
