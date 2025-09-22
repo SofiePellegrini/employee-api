@@ -1,26 +1,34 @@
-# Staff API
+Staff API
 
-A REST API for an employee register, built with **Node.js/TypeScript (Express)** and a simple **React/Tailwind** frontend.  
+A REST API for an employee register, built with Node.js/TypeScript (Express) and a simple React/Tailwind frontend.
 Data is stored in memory and will be lost when the server restarts.
 
-## Getting Started
+Getting Started
+Requirements
 
-### Requirements
-- Node.js v20+
-- npm
+Node.js v20+
 
-### Installation
-cd staff-api
+npm
 
-Install dependencies for backend and frontend:
+Installation
 
+Clone the repo and install dependencies:
+
+git clone https://github.com/SofiePellegrini/employee-api.git
+cd employee-api
+
+# install root dependencies (includes concurrently)
+npm install
+
+# install server + web dependencies
 npm run install:all
 
 Development
 
-Run both backend and frontend:
+Run both backend and frontend together:
 
 npm run dev
+
 
 API runs at http://localhost:8000
 
@@ -32,11 +40,11 @@ GET /api/employees – list all employees
 
 POST /api/employees – create new employee
 
-body: { "firstName": "...", "lastName": "...", "email": "..." }
+Body: { "firstName": "...", "lastName": "...", "email": "..." }
 
 DELETE /api/employees/:id – delete employee
 
-Rules:
+Rules
 
 All fields are required
 
@@ -58,8 +66,8 @@ Runs at http://localhost:3000
 Tests
 
 The API is covered with Vitest + Supertest tests.
+
 Run tests with:
 
 cd server
-
 npm run test
